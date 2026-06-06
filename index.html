@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris Tech Solutions | Next-Gen Cloud Consulting</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-circle"><i class="fa-solid fa-solar-panel"></i></span>
+                SOLARIS
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <span class="badge">AWS CLOUD CONSULTING</span>
+            <h1>Powering Enterprise <span>Serverless Architectures</span></h1>
+            <p>We build resilient, elastic, and scalable backend platforms using microservices, containers, and serverless workflows to accelerate your business scaling.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Start a Project</a>
+                <a href="#services" class="btn btn-secondary">Explore Services</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-badge">WHO WE ARE</span>
+                    <h2>Pioneers in Modern <span>Cloud Engineering</span></h2>
+                    <p>At Solaris Tech Solutions, we specialize in modernizing legacy structures, migrating workloads to AWS, and containerizing business logics. Our engineers ensure zero downtime transitions and optimal cost optimization configurations.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Uptime Delivered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Microservices Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">DevOps Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="card-glow"></div>
+                        <i class="fa-solid fa-server visual-icon"></i>
+                        <h3>Optimized Docker Pipelines</h3>
+                        <p>Fully containerized workflows allowing micro-deployments with zero environment variations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">WHAT WE DO</span>
+                <h2>Enterprise <span>Services Suite</span></h2>
+                <p>We provide full-lifecycle cloud architecture services optimized for speed, reliability, and security.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-brands fa-docker"></i></div>
+                    <h3>Docker Containerization</h3>
+                    <p>Standardize application environments to build, run, and ship applications reliably across staging, testing, and production servers.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Kubernetes Orchestration</h3>
+                    <p>Automated scaling, container scheduling, and network ingress routing to maintain highly-resilient, distributed systems.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-brands fa-aws"></i></div>
+                    <h3>AWS Cloud Architecting</h3>
+                    <p>Design multi-region, cost-optimized, secure AWS architectures incorporating Lambda, ECS, S3, and API Gateway.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-badge">GET IN TOUCH</span>
+                    <h2>Let's build something <span>incredible</span> together</h2>
+                    <p>Ready to deploy your applications on modern serverless stacks? Get in touch with our team of lead cloud architects today.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>consulting@solaristech.com</span>
+                        </div>
+                        <div class="info-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Silicon Valley Office, San Jose, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card card">
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Description</label>
+                            <textarea id="message" placeholder="Tell us about your hosting or infrastructure needs..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Proposal</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Solaris Tech Solutions. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-aws"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
